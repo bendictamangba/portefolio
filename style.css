@@ -488,7 +488,7 @@ section {
 .project-img {
   width: 100%;
   max-width: 560px;
-  height: 180px;
+  aspect-ratio: 560 / 180;
   border-radius: 10px;
   background: var(--img-placeholder-bg);
   border: 1px dashed var(--border);
