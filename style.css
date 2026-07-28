@@ -639,6 +639,26 @@ footer {
   margin-bottom: 24px;
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 1.3rem;
+  transition: all 0.2s;
+}
+.hamburger:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 @media (max-width: 900px) {
   .hero .container {
     grid-template-columns: 1fr;
@@ -679,17 +699,50 @@ footer {
   .ref-grid {
     grid-template-columns: 1fr;
   }
-  nav ul {
-    gap: 12px;
-  }
-  nav ul a {
-    font-size: 0.75rem;
+  .hamburger {
+    display: flex;
   }
   .photo-frame {
     width: 200px;
     height: 200px;
   }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    gap: 16px;
+  }
+nav ul.open {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .contact-chip {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .contact-chip svg {
+    width: 16px;
+    height: 16px;
+  }
   .section-card {
-    padding: 28px;
+    padding: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
   }
 }

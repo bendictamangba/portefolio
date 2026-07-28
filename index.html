@@ -12,7 +12,8 @@
   <nav>
     <div class="container">
       <div class="nav-right">
-        <ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+        <ul id="navMenu">
           <li><a href="#about">À propos</a></li>
           <li><a href="#skills">Compétences</a></li>
           <li><a href="#experience">Expériences</a></li>
@@ -76,7 +77,7 @@
     <div class="container">
       <div class="section-card">
         <h2 class="section-title">À propos</h2>
-        <p class="section-subtitle">Qui je suis</p>
+        <p class="section-subtitle">Qui suis-je ?</p>
         <div class="about-text" style="max-width:800px">
           <p>
             Développeuse Full Stack en dernière année de Licence en Informatique des Organisations (IFNTI-Sokodé), je transforme des idées en applications web robustes et modernes — de la conception à la mise en production. Maîtrise de l'ensemble de la chaîne : modélisation, développement backend/frontend, déploiement et conteneurisation.
@@ -349,6 +350,17 @@
       const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+      });
     });
   </script>
 
