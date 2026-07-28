@@ -488,7 +488,9 @@ section {
 .project-img {
   width: 100%;
   max-width: 560px;
-  aspect-ratio: 560 / 180;
+  height: auto;
+  min-height: 160px;
+  max-height: 260px;
   border-radius: 10px;
   background: var(--img-placeholder-bg);
   border: 1px dashed var(--border);
@@ -500,16 +502,13 @@ section {
   color: var(--img-placeholder-text);
   font-size: 2rem;
   transition: background 0.3s, border 0.3s;
-  position: relative;
   overflow: hidden;
 }
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  object-fit: contain;
+  display: block;
 }
 .project-img .placeholder-icon {
   font-size: 0.8rem;
