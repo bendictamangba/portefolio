@@ -353,6 +353,7 @@ section {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 8px;
+  color: var(--text-dim);
 }
 .section-subtitle {
   color: var(--text-dim);
