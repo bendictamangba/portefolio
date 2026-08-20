@@ -1,448 +1,1440 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MANGBA Yet-Nam Bénédicta | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="Portfolio de MANGBA Yet-Nam Bénédicta, développeuse Full-Stack."
+  >
+
+  <title>MANGBA Yet-Nam Bénédicta — Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
 
-  <nav>
-    <div class="container">
-      <div class="nav-right">
-        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
-        <ul id="navMenu">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#experience">Expériences</a></li>
-          <li><a href="#education">Formation</a></li>
-          <li><a href="#certificats">Certificats</a></li>
-          <li><a href="#references">Références</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">&#9790;</button>
-      </div>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+  <div class="container nav">
+
+    <a class="brand" href="#home">
+      B<span>.</span>MANGBA
+    </a>
+
+
+    <nav id="navMenu">
+
+      <a href="#about">À propos</a>
+
+      <a href="#work">Projets</a>
+
+      <a href="#skills">Compétences</a>
+
+      <a href="#education">Formation</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Changer de thème"
+      >
+        ☼
+      </button>
+
+
+      <button
+        id="menuToggle"
+        class="icon-btn menu-btn"
+        aria-label="Ouvrir le menu"
+      >
+        ☰
+      </button>
+
     </div>
-  </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <div class="badge">Soutenance en septembre 2026</div>
-        <h1>MANGBA<br>Yet-Nam <span>Bénédicta</span></h1>
-        <p class="subtitle">Développeuse FullStack</p>
-        <div class="hero-contact">
-          <a href="mailto:mangbayetnam.com" class="contact-chip email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            mangbayetnam@gmail.com
-          </a>
-          <a href="tel:0022892177598" class="contact-chip phone">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            00228 92177598
-          </a>
-          <a href="https://wa.me/22892177598" target="_blank" class="contact-chip whatsapp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp
-          </a>
-          <span class="contact-chip location">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Lomé, Togo
-          </span>
-          <a href="https://github.com/bendictamangba" target="_blank" class="contact-chip github">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/bendictamangba" target="_blank" class="contact-chip linkedin">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-             MANGBA Yet-Nam Bénédicta
-          </a>
-        </div>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Me contacter</a>
-          <a href="MANGBA_Yet-Nam_Bénédicta_CV.pdf" class="btn btn-outline" download>Télécharger le CV</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <div class="photo-frame">
-          <img src="me.jpeg" alt="MANGBA Yet-Nam Bénédicta">
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
-  <!-- À propos -->
-  <section id="about">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">À propos</h2>
-        <p class="section-subtitle">Qui suis-je ?</p>
-        <div class="about-text" style="max-width:800px">
-          <p>
-            Développeuse Full Stack en dernière année de Licence en Informatique des Organisations (IFNTI-Sokodé), je transforme des idées en applications web robustes et modernes, de la conception à la mise en production. Maîtrise de l'ensemble de la chaîne : modélisation, développement backend/frontend, déploiement et conteneurisation.
-          </p>
-          <p>
-            Parallèlement, je gère la boutique commerciale familiale, une expérience qui aiguise mon sens des responsabilités et ma capacité à jongler entre technique et gestion au quotidien.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+</header>
 
-  <!-- Compétences -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Compétences</h2>
-        <p class="section-subtitle">Technologies et outils</p>
-        <div class="skills-cloud">
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Spring Boot</span>
-          <span class="skill-tag">Laravel</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">Angular</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">SQLite</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">Prisma</span>
-          <span class="skill-tag">GraphQL</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">Modelio</span>
-          <span class="skill-tag">LaTeX</span>
-          <span class="skill-tag">VS Code</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Expériences -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Expériences professionnelles</h2>
-        <p class="section-subtitle">Parcours et projets réalisés</p>
-      </div>
-      <div class="timeline" style="margin-top:24px;">
 
-          <div class="timeline-item section-card">
-          <div class="company">Projet client</div>
-          <div class="project-name">G's Glamzy — Portfolio</div>
-          <p>Portfolio personnel réalisé pour un client avec HTML et CSS, avec un design moderne et adapté au mobile, incluant un changement de thème entre mode sombre et mode clair.</p>
-          <div class="project-links">
-            <a href="https://gs-glamzy.vercel.app" target="_blank" class="project-link">Voir le site</a>
-          </div>
-          <div class="project-img">
-            <img src="glamzy.png" alt="Capture d'ecran Glamzy">
-          </div>
-        </div>
+<main>
 
-          <div class="timeline-item section-card">
-          <div class="company">Projet client</div>
-          <div class="project-name">PamPam — Site vitrine</div>
-          <p>Site vitrine d'une boutique de proximité située au Marché Massalassi à Lomé (Togo), avec page d'accueil dynamique et animations, sections Services et Produits, carte interactive OpenStreetMap, lien WhatsApp direct, mode sombre/clair et compteur de visites. Développé en HTML5, CSS3 et JavaScript vanilla, déployé via Vercel.</p>
-          <div class="project-links">
-            <a href="https://pampam-iota.vercel.app" target="_blank" class="project-link">Voir le site</a>
-            <a href="https://github.com/bendictamangba/pampam" target="_blank" class="project-link">Code source</a>
-          </div>
-          <div class="project-img">
-            <img src="pampam.png" alt="Capture d'ecran PamPam">
-          </div>
-        </div>
 
-        <div class="timeline-item section-card">
-          <div class="company">SYNAPSES IT SOLUTIONS (USA &amp; CANADA)</div>
-          <div class="project-name">Plateforme Immobiz</div>
-          <p>Plateforme de gestion immobilière développée avec Angular (frontend) et Spring Boot (backend), intégrant un système de scoring des dossiers de location, un moyen de paiement en ligne, une architecture multi-profils et une base de données MySQL.</p>
-          <div class="project-img">
-            <img src="immobiz.png" alt="Capture d'ecran Immobiz">
-          </div>
-        </div>
-        <div class="timeline-item section-card">
-          <div class="company">IFNTI-Sokodé</div>
-          <div class="project-name">Plateforme E-gbalè</div>
-          <p>Plateforme web innovante de centralisation des carnets de santé, dotée d'un système de prise de rendez-vous en ligne et développée avec Next.js (frontend et backend).</p>
-          <div class="project-img">
-            <img src="egbale.png" alt="Capture d'ecran Immobiz">
-          </div>
-        </div>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-        <div class="timeline-item section-card">
-          <div class="company">IFNTI-Sokodé</div>
-          <div class="project-name">API de gestion de contacts</div>
-          <p>API GraphQL performante pour la gestion de contacts, avec requêtes optimisées et mutations sécurisées.</p>
-          <div class="project-links">
-            <a href="https://github.com/bendictamangba/API_gestioncontact_Graphql" target="_blank" class="project-link">Voir le code source</a>
-          </div>
-          <div class="project-img">
-            <img src="graphql.png" alt="Capture d'ecran Immobiz">
-          </div>
-        </div>
+<section
+  class="hero"
+  id="home"
+>
 
-        <div class="timeline-item section-card">
-          <div class="company">IFNTI-Sokodé</div>
-          <div class="project-name">Application de réservation en ligne</div>
-          <p>Développement d'une plateforme de réservation en ligne avec Spring Boot.</p>
-          <div class="project-links">
-            <a href="https://github.com/bendictamangba/Reservation_en_ligne" target="_blank" class="project-link">Voir le code source</a>
-          </div>
-          <div class="project-img">
-            <img src="reservation.png" alt="Capture d'ecran Reservation">
-          </div>
-        </div>
+  <div class="hero-orb"></div>
 
-        <div class="timeline-item section-card">
-          <div class="company">ELCO-BTP</div>
-          <div class="project-name">Application de gestion de chantier en temps réel</div>
-          <p>Application full stack de gestion de chantier en temps réel, développée avec Laravel (backend et frontend Blade).</p>
-           <div class="project-img">
-            <img src="chantier.png" alt="Capture d'ecran Chantier">
-          </div>
-        </div>
 
-        <div class="timeline-item section-card">
-          <div class="company">IFNTI-Sokodé</div>
-          <div class="project-name">Rapidos — Application CLI de gestion de stock</div>
-          <p>Application de gestion de stock en ligne de commande (CLI) en Python, permettant la gestion des commandes, des clients, et la mise à jour automatique des stocks.</p>
-          <div class="project-links">
-            <a href="https://github.com/bendictamangba/rapidos_gestionstock.git" target="_blank" class="project-link">Voir le code source</a>
-          </div>
-           <div class="project-img">
-            <img src="gestionstock.png" alt="Capture d'ecran GestionStock">
-          </div>
-        </div>
+  <div class="container hero-grid">
 
-        <div class="timeline-item section-card">
-          <div class="company">Projet personnel</div>
-          <div class="project-name">Pokédex CRUD</div>
-          <p>Réalisation d'un petit CRUD sur le thème des Pokédex pour manipuler les opérations de base (création, lecture, mise à jour, suppression) et consolider les fondamentaux du développement web. Déployé sur Firebase.</p>
-          <div class="project-links">
-            <a href="https://workshop-pokedex-394e9.web.app/pokemons" target="_blank" class="project-link">Voir le projet</a>
-            <a href="https://github.com/bendictamangba/apprentissage_angular_udemy_pokedex_.git" target="_blank" class="project-link">Code source</a>
-          </div>
-          <div class="project-img">
-            <img src="pokedex.png" alt="Capture d'ecran Pokédex">
-          </div>
-        </div>
 
-      
-      
+    <div class="hero-copy">
 
-        <div class="timeline-item section-card">
-          <div class="company">SCANTOGO</div>
-          <div class="project-name">Stage en électricité industrielle</div>
-          <p>Maintenance de systèmes d'instrumentation (capteurs de pression, température, niveau) au sein du département électrique. Développement de la rigueur, du sens de l'organisation et de l'adaptabilité.</p>
-           <div class="project-img">
-            <img src="scan.jpeg" alt="Capture d'ecran Stage Electricité">
-          </div>
-        </div>
+
+      <div class="availability">
+
+        <i></i>
+
+        Développeuse Full-Stack
 
       </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Formation -->
-  <section id="education">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Formation</h2>
-        <p class="section-subtitle">Parcours académique</p>
-        <div class="formation-grid">
-        <div class="formation-card">
-          <h3>Licence en Informatique des Organisations</h3>
-          <div class="school">IFNTI-Sokodé</div>
-          <div class="location">Sokodé, Togo</div>
-        </div>
-        <div class="formation-card">
-          <h3>Baccalauréat en Électronique (F2)</h3>
-          <div class="school">LETP-Lomé</div>
-          <div class="location">Lomé, Togo</div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Certificats -->
-  <section id="certificats">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Certificats</h2>
-        <p class="section-subtitle">Certifications obtenues</p>
-        <div class="cert-grid">
-          <a class="cert-card" href="certificats/intelligence-artificielle.pdf" target="_blank">
-            <div class="cert-img"><img src="certificats/intelligence-artificielle.png" alt="Certificat Intelligence artificielle"></div>
-            <div class="cert-title">Intelligence artificielle</div>
-            <div class="cert-org">NanaTech Talents</div>
-            <div class="cert-date">novembre 05, 2024</div>
-          </a>
-          <a class="cert-card" href="certificats/programmation.pdf" target="_blank">
-            <div class="cert-img"><img src="certificats/programmation.png" alt="Certificat Programmation"></div>
-            <div class="cert-title">Programmation</div>
-            <div class="cert-org">NanaTech Talents</div>
-            <div class="cert-date">novembre 09, 2024</div>
-          </a>
-          <a class="cert-card" href="certificats/ia-generative.pdf" target="_blank">
-            <div class="cert-img"><img src="certificats/ia-generative.png" alt="Certificat IA générative"></div>
-            <div class="cert-title">L'IA générative : bonnes pratiques de la recherche en ligne</div>
-            <div class="cert-org">NanaTech Talents</div>
-            <div class="cert-date">novembre 05, 2024</div>
-          </a>
-          <a class="cert-card" href="certificats/copilot-excel.pdf" target="_blank">
-            <div class="cert-img"><img src="certificats/copilot-excel.png" alt="Certificat Copilot dans Excel"></div>
-            <div class="cert-title">Copilot dans Excel : l'analyse de données avec l'IA</div>
-            <div class="cert-org">NanaTech Talents</div>
-            <div class="cert-date">novembre 05, 2024</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+      <p class="eyebrow">
+        MANGBA Yet-Nam Bénédicta
+      </p>
 
-  <!-- Prix & Langues -->
-  <section>
-    <div class="container">
-      <div class="section-card">
-      <div class="extra-grid">
-        <div class="extra-block">
-          <h3>Prix</h3>
-          <ul>
-            <li class="prize-item">
-              <div>
-                <div class="prize-title">THE BEST PROGRAMMER — 2ème place</div>
-                <div class="prize-desc">Compétition inter-étudiants organisée par l'IFNTI valorisant créativité et innovation.</div>
-                <div class="prize-project">Projet présenté : Plateforme E-gbalè</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="extra-block">
-          <h3>Langues</h3>
-          <ul>
-            <li><span class="lang-name">Français</span><span class="lang-level">Courant</span></li>
-            <li><span class="lang-name">Ewe</span><span class="lang-level">Langue maternelle</span></li>
-            <li><span class="lang-name">Anglais</span><span class="lang-level">Notions</span></li>
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top: 40px;">
-        <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:12px;">Centres d'intérêt</h3>
-        <div class="interests">
-          <span>Lecture</span>
-          <span>Marche</span>
-          <span>Gestion de la boutique commerciale familiale</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Références -->
-  <section id="references">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Références</h2>
-        <p class="section-subtitle">Personnes recommandant mon travail</p>
-        <div class="ref-grid">
-        <div class="ref-card">
-          <div class="ref-name">TEOURI Sabirou</div>
-          <div class="ref-title">Directeur de l'IFNTI</div>
-          <div class="ref-contact">sabirou.teouri@ifnti.com · 00228 90918141</div>
-        </div>
-        <div class="ref-card">
-          <div class="ref-name">LAMANDON Miwanou</div>
-          <div class="ref-title">Ingénieur en Génie Électrique / Chef du département électrique à SCANTOGO</div>
-          <div class="ref-contact">lomadondieudonne@gmail.com · 00228 91483416</div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
+      <h1>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-card">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">Restons en contact</p>
-      <div class="hero-contact" style="justify-content:center;">
-        <a href="mailto:alidayetnam@gmail.com" class="contact-chip email">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-           mangbayetnam@gmail.com
+        Je transforme des idées en
+        <em>applications utiles.</em>
+
+      </h1>
+
+
+      <p class="hero-text">
+
+        Je conçois et développe des applications web,
+        des API et des solutions adaptées à des besoins
+        métier concrets.
+
+      </p>
+
+
+      <div class="hero-buttons">
+
+
+        <a
+          class="btn primary"
+          href="#work"
+        >
+
+          Voir mes projets
+
+          <b>→</b>
+
         </a>
-        <a href="tel:0022892177598" class="contact-chip phone">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          00228 92177598
+
+
+        <a
+          class="btn ghost"
+          href="MANGBA_Yet-Nam_Bénédicta_CV.pdf"
+          download
+        >
+
+          Télécharger mon CV
+
         </a>
-        <a href="https://wa.me/22892177598" target="_blank" class="contact-chip whatsapp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp
+
+
+      </div>
+
+
+      <div class="hero-links">
+
+        <a href="mailto:mangbayetnam@gmail.com">
+          mangbayetnam@gmail.com
         </a>
-        <span class="contact-chip location">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Lomé, Togo
-        </span>
-        <a href="https://github.com/bendictamangba" target="_blank" class="contact-chip github">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+
+
+        <a
+          href="https://github.com/bendictamangba"
+          target="_blank"
+          rel="noopener"
+        >
           GitHub
         </a>
-        <a href="https://linkedin.com/in/bendictamangba" target="_blank" class="contact-chip linkedin">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          MANGBA Yet-Nam Bénédicta
+
+
+        <a
+          href="https://linkedin.com/in/bendictamangba"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
         </a>
+
       </div>
+
+
+    </div>
+
+
+
+    <div class="portrait-wrap">
+
+
+      <div class="portrait-ring"></div>
+
+
+      <div class="portrait">
+
+        <img
+          src="me.jpeg"
+          alt="MANGBA Yet-Nam Bénédicta"
+        >
+
       </div>
+
+
+      <div class="floating-note note-one">
+
+        <strong>
+          Full-Stack
+        </strong>
+
+        <span>
+          Developer
+        </span>
+
+      </div>
+
+
+      <div class="floating-note note-two">
+
+        <strong>
+          Septembre
+        </strong>
+
+        <span>
+          Soutenance 2026
+        </span>
+
+      </div>
+
+
     </div>
-  </section>
 
-  <!-- Download -->
-  <section class="download-section">
-    <div class="container">
-      <h2>Vous voulez en savoir plus ?</h2>
-      <p>Téléchargez mon CV au format PDF</p>
-      <a href="MANGBA_Yet-Nam_Bénédicta_CV.pdf" class="btn btn-primary" download>&#11015; Télécharger le CV</a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HIGHLIGHTS
+===================================================== -->
+
+<section class="proof-strip">
+
+  <div class="container proof-grid">
+
+
+    <div>
+
+      <strong>01</strong>
+
+      <span>
+
+        IMMOBIZ<br>
+        Plateforme de gestion immobilière
+
+      </span>
+
     </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 MANGBA Yet-Nam Bénédicta. Tous droits réservés.</p>
+
+
+    <div>
+
+      <strong>02</strong>
+
+      <span>
+
+        E-gbalè<br>
+        2ème place — The Best Programmer
+
+      </span>
+
     </div>
-  </footer>
 
-  <script>
-    const toggle = document.getElementById('themeToggle');
-    const html = document.documentElement;
-    const stored = localStorage.getItem('theme');
-    if (stored) html.setAttribute('data-theme', stored);
-    toggle.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
 
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-      });
-    });
-  </script>
+
+    <div>
+
+      <strong>03</strong>
+
+      <span>
+
+        Applications web<br>
+        API & solutions métier
+
+      </span>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+  id="about"
+  class="section"
+>
+
+
+  <div class="container two-col">
+
+
+    <div>
+
+      <p class="section-index">
+        01 — À PROPOS
+      </p>
+
+
+      <h2>
+
+        Développeuse Full-Stack
+        orientée applications métier.
+
+      </h2>
+
+    </div>
+
+
+
+    <div class="body-copy">
+
+
+      <p>
+
+        Je suis en dernière année de Licence Professionnelle
+        en Informatique des Organisations à l'IFNTI-Sokodé,
+        avec une soutenance prévue en septembre 2026.
+
+      </p>
+
+
+      <p>
+
+        Mon parcours m'a amenée à travailler sur des applications
+        web, des API, des bases de données et des interfaces
+        destinées à de vrais besoins métier.
+
+      </p>
+
+
+      <p>
+
+        J'aime comprendre les besoins d'un projet,
+        participer à sa conception et contribuer à son
+        développement jusqu'à sa mise en œuvre.
+
+      </p>
+
+
+      <p>
+
+        Je souhaite continuer à développer mes compétences
+        en ingénierie logicielle et approfondir progressivement
+        mes connaissances en cybersécurité.
+
+      </p>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section
+  id="work"
+  class="section dark-section"
+>
+
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+
+      <div>
+
+        <p class="section-index">
+          02 — PROJETS
+        </p>
+
+
+        <h2>
+          Projets sélectionnés
+        </h2>
+
+      </div>
+
+
+      <p>
+
+        Réalisations développées dans différents
+        contextes professionnels, académiques et personnels.
+
+      </p>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         IMMOBIZ
+    ================================================== -->
+
+    <article class="featured-project">
+
+
+      <div class="project-visual">
+
+        <img
+          src="immobiz.png"
+          alt="IMMOBIZ"
+        >
+
+      </div>
+
+
+
+      <div class="project-info">
+
+
+        <span class="label">
+
+          Projet professionnel ·
+          SYNAPSES IT SOLUTIONS
+
+        </span>
+
+
+        <h3>
+          IMMOBIZ
+        </h3>
+
+
+        <h4>
+
+          Plateforme Full-Stack
+          de gestion immobilière
+
+        </h4>
+
+
+        <p>
+
+          Plateforme destinée à centraliser la gestion
+          des biens immobiliers, propriétaires, locataires,
+          contrats, annonces et paiements.
+
+        </p>
+
+
+        <ul>
+
+          <li>
+            Gestion des profils et des rôles
+          </li>
+
+          <li>
+            Gestion des biens immobiliers
+          </li>
+
+          <li>
+            Gestion des locataires et contrats
+          </li>
+
+          <li>
+            API REST et intégration frontend/backend
+          </li>
+
+          <li>
+            Fonctionnalités liées aux paiements
+          </li>
+
+        </ul>
+
+
+        <!-- Technologies propres au projet -->
+
+        <div class="tech">
+
+          <span>Java</span>
+
+          <span>Spring Boot</span>
+
+          <span>Angular</span>
+
+          <span>PostgreSQL</span>
+
+          <span>Docker</span>
+
+          <span>JWT</span>
+
+        </div>
+
+
+      </div>
+
+
+    </article>
+
+
+
+    <!-- =================================================
+         OTHER PROJECTS
+    ================================================== -->
+
+    <div class="project-grid">
+
+
+
+      <!-- E-GBALE -->
+
+      <article class="project-card award">
+
+
+        <div class="card-image">
+
+          <img
+            src="egbale.png"
+            alt="E-gbalè"
+          >
+
+        </div>
+
+
+        <div class="card-body">
+
+
+          <span class="label">
+
+            🏆 2ème place · THE BEST PROGRAMMER
+
+          </span>
+
+
+          <h3>
+            E-gbalè
+          </h3>
+
+
+          <p>
+
+            Plateforme de centralisation des carnets
+            de santé avec prise de rendez-vous en ligne.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>
+              Next.js
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- PAMPAM -->
+
+      <article class="project-card">
+
+
+        <div class="card-image">
+
+          <img
+            src="pampam.png"
+            alt="PamPam"
+          >
+
+        </div>
+
+
+        <div class="card-body">
+
+
+          <span class="label">
+            Projet client
+          </span>
+
+
+          <h3>
+            PamPam
+          </h3>
+
+
+          <p>
+
+            Site vitrine pour une boutique à Lomé,
+            avec carte interactive, intégration WhatsApp
+            et interface responsive.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>
+              Next.js
+            </span>
+
+          </div>
+
+
+          <div class="card-links">
+
+
+            <a
+              class="project-link"
+              href="https://pampam-iota.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <span>
+                Voir le site
+              </span>
+
+              <b>
+                ↗
+              </b>
+
+            </a>
+
+
+            <a
+              class="project-link secondary"
+              href="https://github.com/bendictamangba/pampam"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <span>
+                Voir le code
+              </span>
+
+              <b>
+                GitHub
+              </b>
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- GRAPHQL -->
+
+      <article class="project-card">
+
+
+        <div class="card-body no-image">
+
+
+          <span class="label">
+
+            Backend · Projet académique
+
+          </span>
+
+
+          <h3>
+
+            API de gestion de contacts
+
+          </h3>
+
+
+          <p>
+
+            API permettant de gérer les opérations
+            de lecture et de modification sur des contacts.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>
+              GraphQL
+            </span>
+
+          </div>
+
+
+          <div class="card-links">
+
+
+            <a
+              class="project-link secondary"
+              href="https://github.com/bendictamangba/API_gestioncontact_Graphql"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <span>
+                Voir le code
+              </span>
+
+              <b>
+                GitHub
+              </b>
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- ELCO-BTP -->
+
+      <article class="project-card">
+
+
+        <div class="card-image">
+
+          <img
+            src="chantier.png"
+            alt="Application de gestion de chantier"
+          >
+
+        </div>
+
+
+        <div class="card-body">
+
+
+          <span class="label">
+            ELCO-BTP
+          </span>
+
+
+          <h3>
+            Gestion de chantier
+          </h3>
+
+
+          <p>
+
+            Application destinée au suivi
+            et à la gestion de chantiers.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>
+              Laravel
+            </span>
+
+            <span>
+              Blade
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section
+  id="skills"
+  class="section"
+>
+
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+
+      <div>
+
+        <p class="section-index">
+          03 — COMPÉTENCES
+        </p>
+
+
+        <h2>
+          Technologies & outils
+        </h2>
+
+      </div>
+
+
+      <p>
+
+        Les technologies et outils que j'utilise
+        dans mes différents projets.
+
+      </p>
+
+
+    </div>
+
+
+
+    <div class="skill-list">
+
+
+      <div>
+
+        <strong>
+          Backend
+        </strong>
+
+        <span>
+
+          Java · Spring Boot · Laravel · Node.js
+
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Frontend
+        </strong>
+
+        <span>
+
+          Angular · TypeScript · JavaScript · Next.js
+
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Bases de données
+        </strong>
+
+        <span>
+
+          PostgreSQL · MySQL · SQLite
+
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          API
+        </strong>
+
+        <span>
+
+          REST · GraphQL · JWT
+
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          DevOps & outils
+        </strong>
+
+        <span>
+
+          Docker · Git · Maven
+
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Domaine d'intérêt
+        </strong>
+
+        <span>
+
+          Cybersécurité · Application Security
+
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ACHIEVEMENT
+===================================================== -->
+
+<section class="achievement">
+
+
+  <div class="container achievement-inner">
+
+
+    <div class="trophy">
+      02
+    </div>
+
+
+    <div>
+
+
+      <p class="section-index">
+        RÉALISATION
+      </p>
+
+
+      <h2>
+
+        2ème place — THE BEST PROGRAMMER
+
+      </h2>
+
+
+      <p>
+
+        Compétition inter-étudiants de l'IFNTI.
+        Projet présenté : <strong>E-gbalè</strong>.
+
+      </p>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section
+  id="education"
+  class="section"
+>
+
+
+  <div class="container">
+
+
+    <p class="section-index">
+      04 — PARCOURS
+    </p>
+
+
+    <h2 class="large-title">
+
+      Formation & certifications
+
+    </h2>
+
+
+
+    <div class="education-grid">
+
+
+      <div class="education-item">
+
+
+        <span>
+          Licence
+        </span>
+
+
+        <div>
+
+
+          <h3>
+
+            Informatique des Organisations
+
+          </h3>
+
+
+          <p>
+
+            IFNTI — Sokodé, Togo
+
+          </p>
+
+
+          <p>
+
+            Soutenance prévue en septembre 2026
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="education-item">
+
+
+        <span>
+          Baccalauréat
+        </span>
+
+
+        <div>
+
+
+          <h3>
+
+            Électronique — F2
+
+          </h3>
+
+
+          <p>
+
+            LETP — Lomé, Togo
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="certs">
+
+
+      <a
+        href="certificats/programmation.pdf"
+        target="_blank"
+      >
+
+        <img
+          src="certificats/programmation.png"
+          alt="Certificat de programmation"
+        >
+
+        <span>
+          Programmation
+        </span>
+
+        <small>
+          NanaTech Talents
+        </small>
+
+      </a>
+
+
+
+      <a
+        href="certificats/intelligence-artificielle.pdf"
+        target="_blank"
+      >
+
+        <img
+          src="certificats/intelligence-artificielle.png"
+          alt="Certificat d'intelligence artificielle"
+        >
+
+        <span>
+          Intelligence artificielle
+        </span>
+
+        <small>
+          NanaTech Talents
+        </small>
+
+      </a>
+
+
+
+      <a
+        href="certificats/ia-generative.pdf"
+        target="_blank"
+      >
+
+        <img
+          src="certificats/ia-generative.png"
+          alt="Certificat d'IA générative"
+        >
+
+        <span>
+          IA générative
+        </span>
+
+        <small>
+          NanaTech Talents
+        </small>
+
+      </a>
+
+
+
+      <a
+        href="certificats/copilot-excel.pdf"
+        target="_blank"
+      >
+
+        <img
+          src="certificats/copilot-excel.png"
+          alt="Certificat Copilot Excel"
+        >
+
+        <span>
+          Copilot dans Excel
+        </span>
+
+        <small>
+          NanaTech Talents
+        </small>
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+  id="contact"
+  class="contact-section"
+>
+
+
+  <div class="container contact-inner">
+
+
+    <p class="section-index">
+      05 — CONTACT
+    </p>
+
+
+    <h2>
+
+      Une opportunité ?
+
+      <br>
+
+      <em>Parlons-en.</em>
+
+    </h2>
+
+
+    <p>
+
+      Pour un projet, une opportunité de stage
+      ou une collaboration, vous pouvez me contacter
+      directement.
+
+    </p>
+
+
+    <a
+      class="btn primary"
+      href="mailto:mangbayetnam@gmail.com"
+    >
+
+      mangbayetnam@gmail.com →
+
+    </a>
+
+
+
+    <div class="contact-bottom">
+
+
+      <a
+        href="https://github.com/bendictamangba"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
+
+
+      <a
+        href="https://linkedin.com/in/bendictamangba"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+
+      <a
+        href="https://wa.me/22892177598"
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp
+      </a>
+
+
+      <span>
+        Lomé, Togo
+      </span>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  <div class="container">
+
+    <span>
+      © 2026 MANGBA Yet-Nam Bénédicta
+    </span>
+
+
+    <span>
+      Développeuse Full-Stack
+    </span>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+const root =
+  document.documentElement;
+
+
+const theme =
+  document.getElementById("themeToggle");
+
+
+const menu =
+  document.getElementById("menuToggle");
+
+
+const nav =
+  document.getElementById("navMenu");
+
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+
+if (savedTheme) {
+
+  root.dataset.theme =
+    savedTheme;
+
+}
+
+
+function updateThemeIcon() {
+
+  theme.textContent =
+    root.dataset.theme === "dark"
+      ? "☼"
+      : "☾";
+
+}
+
+
+updateThemeIcon();
+
+
+theme.onclick = () => {
+
+  root.dataset.theme =
+    root.dataset.theme === "dark"
+      ? "light"
+      : "dark";
+
+
+  localStorage.setItem(
+    "theme",
+    root.dataset.theme
+  );
+
+
+  updateThemeIcon();
+
+};
+
+
+menu.onclick = () => {
+
+  nav.classList.toggle("open");
+
+};
+
+
+nav
+  .querySelectorAll("a")
+  .forEach(link => {
+
+    link.onclick = () => {
+
+      nav.classList.remove("open");
+
+    };
+
+  });
+
+</script>
+
 
 </body>
+
 </html>
