@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="IMMOBIZ — Plateforme Full-Stack de gestion immobilière. Projet de MANGBA Yet-Nam Bénédicta."
+  >
+
+  <title>IMMOBIZ — Plateforme Full-Stack de gestion immobilière</title>
+
+  <link rel="alternate" hreflang="fr" href="immobiz.html">
+  <link rel="alternate" hreflang="en" href="immobiz.en.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="container nav">
+
+    <a href="../index.html#home" class="brand">
+      B<span>.</span>MANGBA
+    </a>
+
+    <nav id="navMenu">
+
+      <a href="../index.html#about">À propos</a>
+      <a href="../index.html#work">Projets</a>
+      <a href="../index.html#skills">Compétences</a>
+      <a href="../index.html#contact">Contact</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+      <a
+        href="immobiz.en.html"
+        class="lang-switch"
+        aria-label="Read in English"
+        hreflang="en"
+      >
+        EN
+      </a>
+
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Changer de thème"
+      >
+        ☼
+      </button>
+
+      <button
+        id="menuToggle"
+        class="icon-btn menu-btn"
+        aria-label="Ouvrir le menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<article class="project-page">
+
+  <div class="container">
+
+    <a class="back-link" href="../index.html#work">← Tous les projets</a>
+
+    <header class="project-hero">
+
+      <div class="project-signature sig--immobiz">
+        <span class="sig-number">01</span>
+        <span class="sig-bar" aria-hidden="true"></span>
+        <span class="sig-roles">Frontend · Backend · API · Données · Déploiement</span>
+      </div>
+
+      <span class="label">Projet professionnel</span>
+
+      <h1>IMMOBIZ</h1>
+
+      <p class="project-tagline">Plateforme Full-Stack de gestion immobilière</p>
+
+      <p class="project-intro">Un seul outil pour réunir les biens, les propriétaires, les locataires, les contrats, les annonces et les paiements — des informations qui vivaient jusque-là de façon dispersée.</p>
+
+      <div class="project-actions">
+        <a class="btn ghost" href="mailto:mangbayetnam@gmail.com?subject=D%C3%A9mo%20sur%20demande">Démo sur demande <b>→</b></a>
+      </div>
+
+    </header>
+
+
+    <div class="project-story">
+
+      <section class="story-block">
+        <p class="section-index">01</p>
+        <h2>Le point de départ</h2>
+        <p>La gestion d’un parc immobilier touche à plusieurs mondes : le propriétaire, le locataire, le contrat, l’annonce et le paiement. Quand chacun vit dans un fichier ou un outil différent, le suivi devient vite ingérable. IMMOBIZ part de ce constat : centraliser ces données dans une application web unique, avec des accès adaptés à chaque profil.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">02</p>
+        <h2>Comment je l’ai construit</h2>
+        <p>J’ai structuré l’application en trois blocs : un socle de gestion des profils et des rôles, un référentiel des biens et des contrats, et un module dédié aux paiements. Le frontend Angular dialogue avec une API REST construite en Java avec Spring Boot, appuyée sur PostgreSQL. Les rôles ne sont pas décoratifs : ils déterminent ce que chaque utilisateur peut voir et modifier. L’ensemble est conteneurisé avec Docker pour garder le même environnement du développement jusqu’au déploiement.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">03</p>
+        <h2>Ce que ça apporte</h2>
+        <p>Une application qui couvre tout le cycle : créer un bien, lui associer un propriétaire, gérer le locataire et le contrat, publier l’annonce, puis suivre les paiements. Chaque information reste rattachée à un seul et même outil.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">04</p>
+        <h2>Les fonctions clés</h2>
+        <ul class="feature-list">
+          <li>Gestion des profils et des rôles</li>
+          <li>Gestion du parc de biens immobiliers</li>
+          <li>Suivi des locataires et des contrats</li>
+          <li>API REST dédiée aux opérations métier</li>
+          <li>Intégration frontend / backend</li>
+          <li>Fonctionnalités liées aux paiements</li>
+        </ul>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">05</p>
+        <h2>Les choix techniques</h2>
+        <div class="stack-grid">
+          <div><strong>Frontend</strong><span>Angular</span></div>
+          <div><strong>Backend</strong><span>Java · Spring Boot · API REST · JWT</span></div>
+          <div><strong>Données</strong><span>PostgreSQL</span></div>
+          <div><strong>Déploiement</strong><span>Docker</span></div>
+        </div>
+      </section>
+
+      <section class="story-block related">
+        <p class="section-index">06</p>
+        <h2>À voir aussi</h2>
+        <div class="related-grid">
+      <a class="related-card" href="egbale.html">
+        <span class="label">Projet académique</span>
+        <h3>E-gbalè</h3>
+        <p>Carnets de santé centralisés et rendez-vous en ligne</p>
+      </a>
+      <a class="related-card" href="elco-btp.html">
+        <span class="label">ELCO-BTP</span>
+        <h3>Gestion de chantier</h3>
+        <p>Suivi et gestion des chantiers dans une application web</p>
+      </a>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <span>
+      © 2026 MANGBA Yet-Nam Bénédicta
+    </span>
+
+
+    <span>
+      Conçu et développé par MANGBA Yet-Nam Bénédicta
+    </span>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const root = document.documentElement;
+
+const theme =
+  document.getElementById("themeToggle");
+
+const menu =
+  document.getElementById("menuToggle");
+
+const nav =
+  document.getElementById("navMenu");
+
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+
+if (savedTheme) {
+
+  root.dataset.theme = savedTheme;
+
+}
+
+
+function updateThemeIcon() {
+
+  theme.textContent =
+    root.dataset.theme === "dark"
+      ? "☼"
+      : "☾";
+
+}
+
+
+updateThemeIcon();
+
+
+theme.onclick = () => {
+
+  root.dataset.theme =
+    root.dataset.theme === "dark"
+      ? "light"
+      : "dark";
+
+
+  localStorage.setItem(
+    "theme",
+    root.dataset.theme
+  );
+
+
+  updateThemeIcon();
+
+};
+
+
+menu.onclick = () => {
+
+  nav.classList.toggle("open");
+
+};
+
+
+nav
+  .querySelectorAll("a")
+  .forEach(link => {
+
+    link.onclick = () => {
+
+      nav.classList.remove("open");
+
+    };
+
+  });
+
+</script>
+
+</body>
+
+</html>

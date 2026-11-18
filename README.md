@@ -14,6 +14,8 @@ Je suis en dernière année de Licence Professionnelle en Informatique des Organ
 
 Je développe des applications web en intervenant aussi bien sur le **frontend** que sur le **backend**, les **API** et les **bases de données**. Mes expériences sur des projets professionnels, académiques et personnels m'ont permis d'aborder des problématiques concrètes avec une approche orientée solution.
 
+Chaque projet dispose de sa page de présentation détaillée (« décryptage ») dans `work/`, avec le contexte, l'approche, le résultat, les fonctions clés et les choix techniques. Les cartes de l'accueil renvoient vers ces pages.
+
 - **Localisation :** Lomé, Togo
 - **Email :** mangbayetnam@gmail.com
 - **GitHub :** https://github.com/bendictamangba
@@ -84,7 +86,14 @@ Application destinée au suivi et à la gestion de chantiers.
 
 ```text
 potefolio/
-├── index.html          # Page principale du portfolio
+├── index.html          # Page principale du portfolio (français)
+├── index.en.html       # Page principale du portfolio (anglais)
+├── work/               # Pages de décryptage détaillé (fr / en)
+│   ├── immobiz.html · immobiz.en.html
+│   ├── egbale.html · egbale.en.html
+│   ├── pampam.html · pampam.en.html
+│   ├── contact-api.html · contact-api.en.html
+│   └── elco-btp.html · elco-btp.en.html
 ├── style.css           # Feuille de style
 ├── assets/
 │   ├── images/         # Photographie et captures des projets
@@ -97,5 +106,6 @@ potefolio/
 
 Pour un projet, une opportunité de stage ou une collaboration, contactez-moi directement :
 
+- **Formulaire de contact :** intégré à la section Contact (messagerie via FormSubmit.co vers `alidayetnam@gmail.com`)
 - **Email :** mangbayetnam@gmail.com
 - **WhatsApp :** https://wa.me/22892177598

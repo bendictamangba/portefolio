@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="E-gbalè — Centralized health records and online appointments. Project by MANGBA Yet-Nam Bénédicta."
+  >
+
+  <title>E-gbalè — Centralized health records and online appointments</title>
+
+  <link rel="alternate" hreflang="fr" href="egbale.html">
+  <link rel="alternate" hreflang="en" href="egbale.en.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="container nav">
+
+    <a href="../index.en.html#home" class="brand">
+      B<span>.</span>MANGBA
+    </a>
+
+    <nav id="navMenu">
+
+      <a href="../index.en.html#about">About</a>
+      <a href="../index.en.html#work">Projects</a>
+      <a href="../index.en.html#skills">Skills</a>
+      <a href="../index.en.html#contact">Contact</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+      <a
+        href="egbale.html"
+        class="lang-switch"
+        aria-label="Lire en français"
+        hreflang="fr"
+      >
+        FR
+      </a>
+
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Toggle theme"
+      >
+        ☼
+      </button>
+
+      <button
+        id="menuToggle"
+        class="icon-btn menu-btn"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<article class="project-page">
+
+  <div class="container">
+
+    <a class="back-link" href="../index.en.html#work">← All projects</a>
+
+    <header class="project-hero">
+
+      <div class="project-signature sig--egbale">
+        <span class="sig-number">02</span>
+        <span class="sig-bar" aria-hidden="true"></span>
+        <span class="sig-roles">Frontend · Backend</span>
+      </div>
+
+      <span class="label">Academic project</span>
+
+      <h1>E-gbalè</h1>
+
+      <p class="project-tagline">Centralized health records and online appointments</p>
+
+      <p class="project-intro">A platform that brings health records and appointment booking together in one place, on both the frontend and the backend.</p>
+
+      <div class="project-actions">
+        <a class="btn ghost" href="mailto:mangbayetnam@gmail.com?subject=Demo%20on%20request">Demo on request <b>→</b></a>
+      </div>
+
+    </header>
+
+
+    <div class="project-story">
+
+      <section class="story-block">
+        <p class="section-index">01</p>
+        <h2>The starting point</h2>
+        <p>A person’s health information and appointment booking often live in two different tools. E-gbalè brings them together in a single platform, with one simple idea: find your records and book a slot without switching places.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">02</p>
+        <h2>How I built it</h2>
+        <p>I developed the platform end to end with Next.js, using the framework for both the interface and the backend. This single-stack choice shortens the distance between the two sides and keeps a consistent structure from the first screen down to the business logic.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">03</p>
+        <h2>What it changes</h2>
+        <p>A platform where health records are centralized and appointments are booked online — a complete journey, with no break between reviewing information and making a reservation.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">04</p>
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>Centralized health records</li>
+          <li>Online appointment booking</li>
+          <li>Interface and logic in a single Next.js stack</li>
+        </ul>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">05</p>
+        <h2>Technical choices</h2>
+        <div class="stack-grid">
+          <div><strong>Frontend & Backend</strong><span>Next.js</span></div>
+        </div>
+      </section>
+
+      <section class="story-block related">
+        <p class="section-index">06</p>
+        <h2>See also</h2>
+        <div class="related-grid">
+      <a class="related-card" href="immobiz.en.html">
+        <span class="label">Professional project</span>
+        <h3>IMMOBIZ</h3>
+        <p>Full-Stack real estate management platform</p>
+      </a>
+      <a class="related-card" href="contact-api.en.html">
+        <span class="label">Academic project · Backend</span>
+        <h3>Contact management API</h3>
+        <p>Reading and updating contacts with GraphQL</p>
+      </a>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <span>
+      © 2026 MANGBA Yet-Nam Bénédicta
+    </span>
+
+
+    <span>
+      Designed and developed by MANGBA Yet-Nam Bénédicta
+    </span>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const root = document.documentElement;
+
+const theme =
+  document.getElementById("themeToggle");
+
+const menu =
+  document.getElementById("menuToggle");
+
+const nav =
+  document.getElementById("navMenu");
+
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+
+if (savedTheme) {
+
+  root.dataset.theme = savedTheme;
+
+}
+
+
+function updateThemeIcon() {
+
+  theme.textContent =
+    root.dataset.theme === "dark"
+      ? "☼"
+      : "☾";
+
+}
+
+
+updateThemeIcon();
+
+
+theme.onclick = () => {
+
+  root.dataset.theme =
+    root.dataset.theme === "dark"
+      ? "light"
+      : "dark";
+
+
+  localStorage.setItem(
+    "theme",
+    root.dataset.theme
+  );
+
+
+  updateThemeIcon();
+
+};
+
+
+menu.onclick = () => {
+
+  nav.classList.toggle("open");
+
+};
+
+
+nav
+  .querySelectorAll("a")
+  .forEach(link => {
+
+    link.onclick = () => {
+
+      nav.classList.remove("open");
+
+    };
+
+  });
+
+</script>
+
+</body>
+
+</html>

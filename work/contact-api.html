@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="API de gestion de contacts — Lecture et modification de contacts avec GraphQL. Projet de MANGBA Yet-Nam Bénédicta."
+  >
+
+  <title>API de gestion de contacts — Lecture et modification de contacts avec GraphQL</title>
+
+  <link rel="alternate" hreflang="fr" href="contact-api.html">
+  <link rel="alternate" hreflang="en" href="contact-api.en.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="container nav">
+
+    <a href="../index.html#home" class="brand">
+      B<span>.</span>MANGBA
+    </a>
+
+    <nav id="navMenu">
+
+      <a href="../index.html#about">À propos</a>
+      <a href="../index.html#work">Projets</a>
+      <a href="../index.html#skills">Compétences</a>
+      <a href="../index.html#contact">Contact</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+      <a
+        href="contact-api.en.html"
+        class="lang-switch"
+        aria-label="Read in English"
+        hreflang="en"
+      >
+        EN
+      </a>
+
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Changer de thème"
+      >
+        ☼
+      </button>
+
+      <button
+        id="menuToggle"
+        class="icon-btn menu-btn"
+        aria-label="Ouvrir le menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<article class="project-page">
+
+  <div class="container">
+
+    <a class="back-link" href="../index.html#work">← Tous les projets</a>
+
+    <header class="project-hero">
+
+      <div class="project-signature sig--contact-api">
+        <span class="sig-number">04</span>
+        <span class="sig-bar" aria-hidden="true"></span>
+        <span class="sig-roles">Backend · API</span>
+      </div>
+
+      <span class="label">Projet académique · Backend</span>
+
+      <h1>API de gestion de contacts</h1>
+
+      <p class="project-tagline">Lecture et modification de contacts avec GraphQL</p>
+
+      <p class="project-intro">Une API qui expose des opérations de lecture et de modification sur des contacts, avec GraphQL plutôt qu’un REST classique.</p>
+
+      <div class="project-actions">
+        <a class="btn ghost" href="https://github.com/bendictamangba/API_gestioncontact_Graphql" target="_blank" rel="noopener">Voir le code</a>
+      </div>
+
+    </header>
+
+
+    <div class="project-story">
+
+      <section class="story-block">
+        <p class="section-index">01</p>
+        <h2>Le point de départ</h2>
+        <p>Ce projet est centré sur la couche backend : exposer des données de contacts de façon souple, en laissant le client demander exactement ce dont il a besoin.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">02</p>
+        <h2>Comment je l’ai construit</h2>
+        <p>J’ai défini un schéma GraphQL, puis les opérations de lecture et de modification associées. Contrairement à une API REST avec plusieurs endpoints, le client formule sa requête et obtient la structure de réponse attendue — un exercice utile pour comprendre la modélisation d’un schéma et la validation des données.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">03</p>
+        <h2>Ce que ça apporte</h2>
+        <p>Une API fonctionnelle pour consulter et modifier des contacts, avec un schéma explicite et des requêtes ciblées.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">04</p>
+        <h2>Les fonctions clés</h2>
+        <ul class="feature-list">
+          <li>Schéma GraphQL explicite</li>
+          <li>Opérations de lecture</li>
+          <li>Opérations de modification</li>
+          <li>Couche backend dédiée</li>
+        </ul>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">05</p>
+        <h2>Les choix techniques</h2>
+        <div class="stack-grid">
+          <div><strong>API</strong><span>GraphQL</span></div>
+        </div>
+      </section>
+
+      <section class="story-block related">
+        <p class="section-index">06</p>
+        <h2>À voir aussi</h2>
+        <div class="related-grid">
+      <a class="related-card" href="egbale.html">
+        <span class="label">Projet académique</span>
+        <h3>E-gbalè</h3>
+        <p>Carnets de santé centralisés et rendez-vous en ligne</p>
+      </a>
+      <a class="related-card" href="immobiz.html">
+        <span class="label">Projet professionnel</span>
+        <h3>IMMOBIZ</h3>
+        <p>Plateforme Full-Stack de gestion immobilière</p>
+      </a>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <span>
+      © 2026 MANGBA Yet-Nam Bénédicta
+    </span>
+
+
+    <span>
+      Conçu et développé par MANGBA Yet-Nam Bénédicta
+    </span>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const root = document.documentElement;
+
+const theme =
+  document.getElementById("themeToggle");
+
+const menu =
+  document.getElementById("menuToggle");
+
+const nav =
+  document.getElementById("navMenu");
+
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+
+if (savedTheme) {
+
+  root.dataset.theme = savedTheme;
+
+}
+
+
+function updateThemeIcon() {
+
+  theme.textContent =
+    root.dataset.theme === "dark"
+      ? "☼"
+      : "☾";
+
+}
+
+
+updateThemeIcon();
+
+
+theme.onclick = () => {
+
+  root.dataset.theme =
+    root.dataset.theme === "dark"
+      ? "light"
+      : "dark";
+
+
+  localStorage.setItem(
+    "theme",
+    root.dataset.theme
+  );
+
+
+  updateThemeIcon();
+
+};
+
+
+menu.onclick = () => {
+
+  nav.classList.toggle("open");
+
+};
+
+
+nav
+  .querySelectorAll("a")
+  .forEach(link => {
+
+    link.onclick = () => {
+
+      nav.classList.remove("open");
+
+    };
+
+  });
+
+</script>
+
+</body>
+
+</html>

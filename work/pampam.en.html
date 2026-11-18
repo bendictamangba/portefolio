@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="PamPam — Responsive showcase website for a shop in Lomé. Project by MANGBA Yet-Nam Bénédicta."
+  >
+
+  <title>PamPam — Responsive showcase website for a shop in Lomé</title>
+
+  <link rel="alternate" hreflang="fr" href="pampam.html">
+  <link rel="alternate" hreflang="en" href="pampam.en.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="container nav">
+
+    <a href="../index.en.html#home" class="brand">
+      B<span>.</span>MANGBA
+    </a>
+
+    <nav id="navMenu">
+
+      <a href="../index.en.html#about">About</a>
+      <a href="../index.en.html#work">Projects</a>
+      <a href="../index.en.html#skills">Skills</a>
+      <a href="../index.en.html#contact">Contact</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+      <a
+        href="pampam.html"
+        class="lang-switch"
+        aria-label="Lire en français"
+        hreflang="fr"
+      >
+        FR
+      </a>
+
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Toggle theme"
+      >
+        ☼
+      </button>
+
+      <button
+        id="menuToggle"
+        class="icon-btn menu-btn"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<article class="project-page">
+
+  <div class="container">
+
+    <a class="back-link" href="../index.en.html#work">← All projects</a>
+
+    <header class="project-hero">
+
+      <div class="project-signature sig--pampam">
+        <span class="sig-number">03</span>
+        <span class="sig-bar" aria-hidden="true"></span>
+        <span class="sig-roles">Interface · Responsive · Integration</span>
+      </div>
+
+      <span class="label">Client project</span>
+
+      <h1>PamPam</h1>
+
+      <p class="project-tagline">Responsive showcase website for a shop in Lomé</p>
+
+      <p class="project-intro">A clear, mobile-first showcase with an interactive map and a direct line to WhatsApp.</p>
+
+      <div class="project-actions">
+        <a class="btn primary" href="https://pampam-iota.vercel.app" target="_blank" rel="noopener">Try it online <b>↗</b></a>
+        <a class="btn ghost" href="https://github.com/bendictamangba/pampam" target="_blank" rel="noopener">View code</a>
+      </div>
+
+    </header>
+
+
+    <div class="project-story">
+
+      <section class="story-block">
+        <p class="section-index">01</p>
+        <h2>The starting point</h2>
+        <p>A local shop needs to be found and contacted easily. For PamPam, the goal was simple: present the offer on every screen and make contact immediate, with no detour.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">02</p>
+        <h2>How I built it</h2>
+        <p>I built a responsive showcase page in HTML and CSS, designed first for mobile where most visitors arrive. The interactive map gives the geographic landmark, and the WhatsApp link removes the form step: the visitor goes straight to the conversation.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">03</p>
+        <h2>What it changes</h2>
+        <p>A site that works on mobile as well as desktop, with a very short path between discovering the shop and sending the first message.</p>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">04</p>
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>Responsive layout</li>
+          <li>Interactive map</li>
+          <li>WhatsApp integration</li>
+          <li>Mobile-first journey</li>
+        </ul>
+      </section>
+
+      <section class="story-block">
+        <p class="section-index">05</p>
+        <h2>Technical choices</h2>
+        <div class="stack-grid">
+          <div><strong>Interface</strong><span>HTML · CSS · Responsive Design</span></div>
+        </div>
+      </section>
+
+      <section class="story-block related">
+        <p class="section-index">06</p>
+        <h2>See also</h2>
+        <div class="related-grid">
+      <a class="related-card" href="immobiz.en.html">
+        <span class="label">Professional project</span>
+        <h3>IMMOBIZ</h3>
+        <p>Full-Stack real estate management platform</p>
+      </a>
+      <a class="related-card" href="contact-api.en.html">
+        <span class="label">Academic project · Backend</span>
+        <h3>Contact management API</h3>
+        <p>Reading and updating contacts with GraphQL</p>
+      </a>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <span>
+      © 2026 MANGBA Yet-Nam Bénédicta
+    </span>
+
+
+    <span>
+      Designed and developed by MANGBA Yet-Nam Bénédicta
+    </span>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const root = document.documentElement;
+
+const theme =
+  document.getElementById("themeToggle");
+
+const menu =
+  document.getElementById("menuToggle");
+
+const nav =
+  document.getElementById("navMenu");
+
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+
+if (savedTheme) {
+
+  root.dataset.theme = savedTheme;
+
+}
+
+
+function updateThemeIcon() {
+
+  theme.textContent =
+    root.dataset.theme === "dark"
+      ? "☼"
+      : "☾";
+
+}
+
+
+updateThemeIcon();
+
+
+theme.onclick = () => {
+
+  root.dataset.theme =
+    root.dataset.theme === "dark"
+      ? "light"
+      : "dark";
+
+
+  localStorage.setItem(
+    "theme",
+    root.dataset.theme
+  );
+
+
+  updateThemeIcon();
+
+};
+
+
+menu.onclick = () => {
+
+  nav.classList.toggle("open");
+
+};
+
+
+nav
+  .querySelectorAll("a")
+  .forEach(link => {
+
+    link.onclick = () => {
+
+      nav.classList.remove("open");
+
+    };
+
+  });
+
+</script>
+
+</body>
+
+</html>

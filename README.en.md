@@ -14,6 +14,8 @@ I'm in my final year of a Professional Bachelor's degree in Organizational Compu
 
 I develop web applications, working on both the **frontend** and the **backend**, as well as **APIs** and **databases**. My experience on professional, academic, and personal projects has allowed me to tackle real-world problems with a solution-oriented approach.
 
+Each project has its own detailed breakdown page in `work/`, covering the context, approach, outcome, key features, and technical choices. The cards on the homepage link to these pages.
+
 - **Location:** Lomé, Togo
 - **Email:** mangbayetnam@gmail.com
 - **GitHub:** https://github.com/bendictamangba
@@ -98,5 +100,6 @@ potefolio/
 
 For a project, an internship opportunity, or a collaboration, contact me directly:
 
+- **Contact form:** built into the Contact section (delivered via FormSubmit.co to `alidayetnam@gmail.com`)
 - **Email:** mangbayetnam@gmail.com
 - **WhatsApp:** https://wa.me/22892177598
