@@ -6,6 +6,8 @@ Ce portfolio présente mon parcours, mes compétences techniques ainsi qu'une s�
 
 **Portfolio en ligne :** https://bendictamangba.github.io/portefolio/
 
+*Version anglaise : [README.en.md](README.en.md) / [index.en.html](index.en.html)*
+
 ## À propos
 
 Je suis en dernière année de Licence Professionnelle en Informatique des Organisations à l'IFNTI-Sokodé.
